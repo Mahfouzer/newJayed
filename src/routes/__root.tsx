@@ -83,9 +83,6 @@ export const Route = createRootRoute({
       { rel: 'icon', href: '/favicon.ico' },
       { rel: 'apple-touch-icon', href: '/logo192.png' },
       { rel: 'manifest', href: '/manifest.json' },
-      { rel: 'alternate', hreflang: 'en', href: 'https://jayed.studio/' },
-      { rel: 'alternate', hreflang: 'ar', href: 'https://jayed.studio/' },
-      { rel: 'alternate', hreflang: 'x-default', href: 'https://jayed.studio/' },
     ],
     scripts: [
       ...((GTM_ID || GA_ID)

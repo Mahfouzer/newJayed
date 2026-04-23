@@ -74,6 +74,33 @@ function upsertMeta(attr: 'name' | 'property', key: string, content: string) {
   el.setAttribute('content', content)
 }
 
+const SITE_ORIGIN = 'https://jayed.studio'
+
+/** Canonical absolute URL for the current path (matches per-route canonical patterns). */
+function canonicalPageUrl(pathname: string): string {
+  const p = pathname.replace(/\/$/, '') || '/'
+  if (p === '/') return `${SITE_ORIGIN}/`
+  return `${SITE_ORIGIN}${p}`
+}
+
+/**
+ * hreflang alternates must target the same logical page path. This site serves EN/AR via a
+ * client-side toggle (same URL), so each variant points at the current pathname — not the homepage.
+ */
+function upsertHreflangLink(hreflang: string, href: string) {
+  const safeId = `jayed-hreflang-${hreflang.replace(/[^a-z0-9-]/gi, '-')}`
+  let el = document.getElementById(safeId) as HTMLLinkElement | null
+  if (!el) {
+    el = document.createElement('link')
+    el.id = safeId
+    el.rel = 'alternate'
+    el.setAttribute('hreflang', hreflang)
+    el.setAttribute('data-jayed-hreflang', '')
+    document.head.appendChild(el)
+  }
+  el.href = href
+}
+
 export function DocumentMetaSync() {
   const { lang, t } = useI18n()
   const pathname = useRouterState({ select: (s) => s.location.pathname })
@@ -88,6 +115,11 @@ export function DocumentMetaSync() {
     upsertMeta('property', 'og:locale:alternate', lang === 'ar' ? 'en_US' : 'ar_SA')
     upsertMeta('name', 'twitter:title', title)
     upsertMeta('name', 'twitter:description', description)
+
+    const pageUrl = canonicalPageUrl(pathname)
+    upsertHreflangLink('en', pageUrl)
+    upsertHreflangLink('ar', pageUrl)
+    upsertHreflangLink('x-default', pageUrl)
   }, [pathname, lang, t])
 
   return null
