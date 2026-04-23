@@ -15,6 +15,13 @@ export function OrganizationSchema() {
       'https://www.linkedin.com/company/jayed-studio',
       'https://www.sortlist.com/agency/jayed-studio',
     ],
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5',
+      reviewCount: '4',
+      bestRating: '5',
+      worstRating: '1',
+    },
   }
 
   return (

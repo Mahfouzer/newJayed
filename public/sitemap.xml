@@ -2,44 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Core pages -->
-  <url><loc>https://jayed.studio/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://jayed.studio/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://jayed.studio/work</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://jayed.studio/why-jayde</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://jayed.studio/quote</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://jayed.studio/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jayed.studio/</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://jayed.studio/about</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jayed.studio/projects</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jayed.studio/why-jayde</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jayed.studio/quote</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://jayed.studio/blogs</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 
   <!-- Work case studies -->
-  <url><loc>https://jayed.studio/work/quran-tutors</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://jayed.studio/work/skmd-dubai-sports-world</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://jayed.studio/work/datajolt</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://jayed.studio/work/electric-kiwi</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jayed.studio/projects/quran-tutors</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jayed.studio/projects/skmd-dubai-sports-world</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jayed.studio/projects/datajolt</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jayed.studio/projects/electric-kiwi</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jayed.studio/projects/surra</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- City landing pages -->
-  <url><loc>https://jayed.studio/cities/cairo</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://jayed.studio/cities/dubai</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://jayed.studio/cities/riyadh</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://jayed.studio/cities/kuwait</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://jayed.studio/cities/qatar</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jayed.studio/cities/cairo</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jayed.studio/cities/dubai</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jayed.studio/cities/riyadh</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jayed.studio/cities/kuwait</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jayed.studio/cities/qatar</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Blog posts -->
-  <url><loc>https://jayed.studio/blog/ai-model-avalanche-march-2026</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jayed.studio/blog/ai-race-infrastructure-not-models</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jayed.studio/blog/agent-era-quietly-arrived</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jayed.studio/blog/apple-google-siri-gemini</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jayed.studio/blog/ai-politics-problem</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jayed.studio/blog/saudi-arabia-year-of-ai-2026</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jayed.studio/blog/gulf-compute-diplomacy-data-centers</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jayed.studio/blog/gulf-government-is-the-market</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jayed.studio/blog/gulf-data-sovereignty-hyperscalers</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jayed.studio/blog/gulf-digital-transformation-business-opportunity</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jayed.studio/blog/seo-dying-ai-overviews-data</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jayed.studio/blog/google-ads-losing-manual-control</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jayed.studio/blog/verification-converts-not-visibility</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jayed.studio/blog/linkedin-seo-channel-2026</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jayed.studio/blog/ctv-streaming-performance-channels-2026</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jayed.studio/blog/why-we-dont-do-discovery-calls</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jayed.studio/blog/building-for-the-gulf</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://jayed.studio/blog/the-stack-we-use-and-why</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/local-seo-bible-2026</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://jayed.studio/blogs/ai-model-avalanche-march-2026</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/ai-race-infrastructure-not-models</loc><lastmod>2026-03-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/agent-era-quietly-arrived</loc><lastmod>2026-03-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/apple-google-siri-gemini</loc><lastmod>2026-03-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/ai-politics-problem</loc><lastmod>2026-03-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/saudi-arabia-year-of-ai-2026</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/gulf-compute-diplomacy-data-centers</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/gulf-government-is-the-market</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/gulf-data-sovereignty-hyperscalers</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/gulf-digital-transformation-business-opportunity</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/seo-dying-ai-overviews-data</loc><lastmod>2026-02-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/google-ads-losing-manual-control</loc><lastmod>2026-02-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/verification-converts-not-visibility</loc><lastmod>2026-02-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/linkedin-seo-channel-2026</loc><lastmod>2026-02-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/ctv-streaming-performance-channels-2026</loc><lastmod>2026-02-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/why-we-dont-do-discovery-calls</loc><lastmod>2026-02-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/building-for-the-gulf</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://jayed.studio/blogs/the-stack-we-use-and-why</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
 </urlset>

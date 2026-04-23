@@ -1,5 +1,6 @@
 import { createFileRoute, Link, redirect } from '@tanstack/react-router'
 import { BlogCover } from '../components/blog/BlogCover'
+import { ArticleSchema } from '../components/seo/ArticleSchema'
 import { LtrIsolate } from '../components/ui/LtrIsolate'
 import type { Lang } from '../lib/i18n'
 import { useI18n } from '../lib/i18n'
@@ -144,6 +145,7 @@ export function BlogPostPage({ post }: { post: Post }) {
 
   return (
     <main className="min-h-screen bg-[var(--c-bg)]">
+      <ArticleSchema slug={post.slug} title={post.title} description={post.subtitle} datePublished={post.date} />
       <div className="relative flex flex-col justify-end" style={{ minHeight: '85vh' }}>
         <BlogCover emoji={post.coverEmoji} variant="hero" />
         <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-[var(--c-bg)] to-transparent" />
