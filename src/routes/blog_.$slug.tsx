@@ -23,6 +23,11 @@ const proseBodyClasses = `
   prose-p:text-[var(--c-body)] prose-p:leading-[1.9] prose-p:text-[1.05rem]
   prose-headings:text-[var(--c-hi)] prose-headings:font-bold prose-headings:tracking-tight
   prose-h2:text-[1.6rem] prose-h2:mt-14 prose-h2:mb-5
+  prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
+  prose-hr:border-[var(--c-raised)]
+  prose-blockquote:border-l-[#F55E00] prose-blockquote:text-[var(--c-muted)]
+  prose-pre:bg-[var(--c-surface)] prose-pre:border prose-pre:border-[var(--c-border)] prose-pre:rounded-xl prose-pre:text-sm prose-pre:overflow-x-auto
+  prose-ol:marker:text-[var(--c-muted)]
   prose-a:text-[#F55E00] prose-a:no-underline hover:prose-a:underline
   prose-strong:text-[var(--c-hi)]
 `

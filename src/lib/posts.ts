@@ -1,5 +1,6 @@
 import type { Lang } from './i18n'
 import { postBodyAr } from './postBodies.ar'
+import localSeoBible2026Body from './postBodies/local-seo-bible-2026.html?raw'
 import { postMetaAr } from './postLocales.ar'
 
 export type Post = {
@@ -57,6 +58,17 @@ export function hasArPostBody(slug: string): boolean {
 }
 
 const postsData: Post[] = [
+  {
+    slug: 'local-seo-bible-2026',
+    title: 'The Local SEO Bible',
+    subtitle: 'A Smart, Funny, Honest Guide to Actually Ranking in 2026',
+    category: 'SEO',
+    author: 'Jayed Studio',
+    date: 'April 2026',
+    readTime: '~45 min read',
+    coverEmoji: '📍',
+    body: localSeoBible2026Body,
+  },
   {
     slug: 'ai-model-avalanche-march-2026',
     title: 'The AI Model Avalanche Is Real - And Nobody Is Ready',
