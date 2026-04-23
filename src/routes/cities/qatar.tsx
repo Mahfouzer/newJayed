@@ -13,8 +13,8 @@ export const Route = createFileRoute('/cities/qatar')({
       { property: 'og:image', content: 'https://jayed.studio/icon.png' },
       { name: 'twitter:title', content: 'Web & App Development in Qatar | Jayed Studio' },
       { name: 'twitter:description', content: 'Custom web and mobile app development for SMEs in Qatar. On time. On budget. No overkill.' },
-      { rel: 'canonical', href: 'https://jayed.studio/cities/qatar' },
     ],
+    links: [{ rel: 'canonical', href: 'https://jayed.studio/cities/qatar' }],
   }),
   component: QatarPage,
 })

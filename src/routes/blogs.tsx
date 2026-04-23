@@ -6,12 +6,12 @@ export const Route = createFileRoute('/blogs')({
     meta: [
       { title: 'Blogs | Jayed Studio' },
       { name: 'description', content: 'Thoughts on software, the Gulf market, and building things that last.' },
-      { rel: 'canonical', href: 'https://jayed.studio/blogs' },
       { property: 'og:url', content: 'https://jayed.studio/blogs' },
       { property: 'og:title', content: 'Blogs | Jayed Studio' },
       { property: 'og:description', content: 'Thoughts on software, the Gulf market, and building things that last.' },
       { property: 'og:image', content: 'https://jayed.studio/icon.png' },
     ],
+    links: [{ rel: 'canonical', href: 'https://jayed.studio/blogs' }],
   }),
   component: BlogPage,
 })

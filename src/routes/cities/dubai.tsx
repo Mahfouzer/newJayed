@@ -13,8 +13,8 @@ export const Route = createFileRoute('/cities/dubai')({
       { property: 'og:image', content: 'https://jayed.studio/icon.png' },
       { name: 'twitter:title', content: 'Custom Web & App Development in Dubai | Jayed' },
       { name: 'twitter:description', content: 'Custom web and mobile app development for SMEs in Dubai. On time. On budget. No overkill.' },
-      { rel: 'canonical', href: 'https://jayed.studio/cities/dubai' },
     ],
+    links: [{ rel: 'canonical', href: 'https://jayed.studio/cities/dubai' }],
   }),
   component: DubaiPage,
 })

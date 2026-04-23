@@ -14,8 +14,8 @@ export const Route = createFileRoute('/about')({
           'An Egyptian software studio. We build websites, mobile apps, and e-commerce for SMEs across Egypt and the Gulf. Honest pricing. Real timelines.',
       },
       { property: 'og:title', content: 'About - Jayed Studio | Good Enough.' },
-      { rel: 'canonical', href: 'https://jayed.studio/about' },
     ],
+    links: [{ rel: 'canonical', href: 'https://jayed.studio/about' }],
   }),
   component: AboutPage,
 })

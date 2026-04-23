@@ -19,7 +19,6 @@ export const Route = createFileRoute('/')({
         content:
           'Websites, mobile apps, and e-commerce for SMEs in Egypt and the Gulf. On time. On budget. No overkill.',
       },
-      { rel: 'canonical', href: 'https://jayed.studio/' },
       { property: 'og:url', content: 'https://jayed.studio/' },
       { property: 'og:title', content: 'Web & Mobile App Development for SMEs | Jayed Studio' },
       {
@@ -32,6 +31,7 @@ export const Route = createFileRoute('/')({
       { name: 'twitter:description', content: 'Websites, mobile apps, and e-commerce for SMEs in Egypt and the Gulf. On time. On budget. No overkill.' },
       { name: 'twitter:image', content: 'https://jayed.studio/icon.png' },
     ],
+    links: [{ rel: 'canonical', href: 'https://jayed.studio/' }],
   }),
   component: HomePage,
 })

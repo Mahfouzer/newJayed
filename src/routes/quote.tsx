@@ -7,7 +7,6 @@ export const Route = createFileRoute('/quote')({
     meta: [
       { title: 'Get a Straight Quote | Jayed Studio' },
       { name: 'description', content: 'Tell us what you need and get a real price and timeline in 24 hours. No discovery calls, no upsell, no overkill.' },
-      { rel: 'canonical', href: 'https://jayed.studio/quote' },
       { property: 'og:url', content: 'https://jayed.studio/quote' },
       { property: 'og:title', content: 'Get a Straight Quote | Jayed Studio' },
       { property: 'og:description', content: 'Tell us what you need and get a real price and timeline in 24 hours. No discovery calls, no upsell, no overkill.' },
@@ -15,6 +14,7 @@ export const Route = createFileRoute('/quote')({
       { name: 'twitter:title', content: 'Get a Straight Quote | Jayed Studio' },
       { name: 'twitter:description', content: 'Tell us what you need and get a real price and timeline in 24 hours. No discovery calls, no upsell, no overkill.' },
     ],
+    links: [{ rel: 'canonical', href: 'https://jayed.studio/quote' }],
   }),
   component: QuotePage,
 })

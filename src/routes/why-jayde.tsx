@@ -12,8 +12,8 @@ export const Route = createFileRoute('/why-jayde')({
         name: 'description',
         content: "You don't need a 1,600-person agency. You need software that does the job. Here's why Jayed is different.",
       },
-      { rel: 'canonical', href: 'https://jayed.studio/why-jayde' },
     ],
+    links: [{ rel: 'canonical', href: 'https://jayed.studio/why-jayde' }],
   }),
   component: WhyJayedPage,
 })

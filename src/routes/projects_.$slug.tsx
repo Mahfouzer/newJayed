@@ -13,7 +13,6 @@ export const Route = createFileRoute('/projects_/$slug')({
       meta: [
         { title },
         { name: 'description', content: desc },
-        { rel: 'canonical', href: url },
         { property: 'og:url', content: url },
         { property: 'og:title', content: title },
         { property: 'og:description', content: desc },
@@ -22,6 +21,7 @@ export const Route = createFileRoute('/projects_/$slug')({
         { name: 'twitter:description', content: desc },
         { name: 'twitter:image', content: 'https://jayed.studio/icon.png' },
       ],
+      links: [{ rel: 'canonical', href: url }],
     }
   },
   component: ProjectDetailPage,

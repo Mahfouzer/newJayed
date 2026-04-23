@@ -17,8 +17,8 @@ export const Route = createFileRoute('/cities/cairo')({
       { property: 'og:image', content: 'https://jayed.studio/icon.png' },
       { name: 'twitter:title', content: 'Web & App Development in Egypt | Jayed Studio' },
       { name: 'twitter:description', content: 'Websites, mobile apps, and e-commerce for SMEs in Egypt. On time. On budget. No overkill.' },
-      { rel: 'canonical', href: 'https://jayed.studio/cities/cairo' },
     ],
+    links: [{ rel: 'canonical', href: 'https://jayed.studio/cities/cairo' }],
   }),
   component: CairoPage,
 })
