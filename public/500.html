@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>500 · Server Error | Jayed Studio</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#120A0E" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+    <style>
+      :root {
+        --bg: #120a0e;
+        --surface: #1e101a;
+        --raised: #2e1825;
+        --border: rgba(255, 232, 214, 0.12);
+        --hi: #ffe8d6;
+        --body: #c4a090;
+        --muted: #7a5060;
+        --brand: #f55e00;
+        --crimson: #e8003d;
+        --gold: #ffb020;
+        --shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        color: var(--body);
+        background: radial-gradient(900px 520px at 20% 20%, rgba(232, 0, 61, 0.18), transparent 55%),
+          radial-gradient(950px 560px at 80% 25%, rgba(245, 94, 0, 0.14), transparent 55%),
+          radial-gradient(1100px 650px at 50% 110%, rgba(255, 176, 32, 0.08), transparent 60%), var(--bg);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+        overflow-x: hidden;
+      }
+      .wrap {
+        min-height: 100%;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+      .card {
+        width: 100%;
+        max-width: 920px;
+        border: 1px solid var(--border);
+        background: linear-gradient(180deg, rgba(46, 24, 37, 0.62), rgba(30, 16, 26, 0.48));
+        backdrop-filter: blur(18px);
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        position: relative;
+      }
+      .scan {
+        position: absolute;
+        inset: -60%;
+        background: linear-gradient(135deg, transparent 35%, rgba(245, 94, 0, 0.08), rgba(232, 0, 61, 0.06), transparent 65%);
+        transform: rotate(10deg);
+        animation: drift 5.8s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+        pointer-events: none;
+      }
+      @keyframes drift {
+        0% { transform: translateX(-6%) translateY(-2%) rotate(10deg); opacity: 0.65; }
+        50% { transform: translateX(6%) translateY(2%) rotate(10deg); opacity: 0.85; }
+        100% { transform: translateX(-6%) translateY(-2%) rotate(10deg); opacity: 0.65; }
+      }
+      .top {
+        padding: 26px 26px 0;
+        position: relative;
+        z-index: 1;
+      }
+      .brandline {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .mark {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 650;
+        letter-spacing: -0.02em;
+        color: var(--hi);
+      }
+      .mark img {
+        height: 18px;
+        width: auto;
+        filter: drop-shadow(0 10px 18px rgba(232, 0, 61, 0.20));
+      }
+      .pill {
+        font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 12px;
+        line-height: 1;
+        padding: 10px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(232, 0, 61, 0.35);
+        background: rgba(232, 0, 61, 0.10);
+        color: rgba(255, 232, 214, 0.86);
+        user-select: none;
+      }
+      .main {
+        padding: 18px 26px 26px;
+        display: grid;
+        gap: 16px;
+        position: relative;
+        z-index: 1;
+      }
+      .code {
+        font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: clamp(44px, 8vw, 84px);
+        font-weight: 800;
+        letter-spacing: -0.06em;
+        line-height: 1;
+        background: linear-gradient(90deg, var(--crimson), var(--brand), var(--gold));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin: 6px 0 4px;
+      }
+      h1 {
+        margin: 0;
+        color: var(--hi);
+        font-size: clamp(20px, 2.3vw, 28px);
+        letter-spacing: -0.03em;
+        line-height: 1.2;
+      }
+      p {
+        margin: 0;
+        color: rgba(196, 160, 144, 0.92);
+        font-size: 15px;
+        line-height: 1.8;
+        max-width: 70ch;
+      }
+      .actions {
+        margin-top: 6px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px 16px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 232, 214, 0.14);
+        background: rgba(46, 24, 37, 0.52);
+        transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1), border-color 180ms ease,
+          background 180ms ease, box-shadow 180ms ease;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: -0.01em;
+        color: rgba(255, 232, 214, 0.92);
+      }
+      .btn.primary {
+        border-color: rgba(232, 0, 61, 0.35);
+        background: linear-gradient(135deg, rgba(232, 0, 61, 0.92), rgba(245, 94, 0, 0.90));
+        box-shadow: 0 14px 44px rgba(232, 0, 61, 0.18);
+      }
+      .btn:hover {
+        transform: translateY(-1px);
+        border-color: rgba(232, 0, 61, 0.45);
+        box-shadow: 0 18px 56px rgba(0, 0, 0, 0.4);
+      }
+      .btn:active {
+        transform: translateY(0px);
+      }
+      .hint {
+        margin-top: 10px;
+        color: rgba(122, 80, 96, 0.95);
+        font-size: 12px;
+        font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      }
+      .divider {
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(255, 232, 214, 0.12), transparent);
+        margin: 2px 0 0;
+      }
+      .footer {
+        padding: 18px 26px 22px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        color: rgba(122, 80, 96, 0.92);
+        font-size: 12px;
+        position: relative;
+        z-index: 1;
+      }
+      .footer strong {
+        color: rgba(255, 232, 214, 0.76);
+        font-weight: 650;
+      }
+
+      /* RTL tweaks (applied via [data-lang="ar"]) */
+      html[data-lang="ar"] body {
+        font-family: "Amiri", Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+      }
+      html[data-lang="ar"] .main p {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="card" role="main" aria-label="500 Server Error">
+        <div class="scan" aria-hidden="true"></div>
+        <div class="top">
+          <div class="brandline">
+            <div class="mark">
+              <img src="/images/jayed-logo.webp" alt="" aria-hidden="true" />
+              <span>Jayed Studio</span>
+            </div>
+            <div class="pill">SERVER_ERROR</div>
+          </div>
+        </div>
+        <div class="main">
+          <div class="code">500</div>
+          <h1 data-i18n="title">Something broke on the server.</h1>
+          <p data-i18n="body">
+            This isn’t your fault. Try again in a moment. If it keeps happening, the server may be misconfigured
+            (common causes: missing rewrite rules, incorrect document root, or a broken deploy).
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="/" data-i18n="home">Go home</a>
+            <a class="btn" href="javascript:location.reload()" data-i18n="reload">Reload</a>
+            <a class="btn" href="/quote" data-i18n="contact">Contact us</a>
+          </div>
+          <div class="hint" data-i18n="hint">
+            If you’re deploying to Hostinger: confirm `public_html` points to `dist/client` and `.htaccess` is present.
+          </div>
+        </div>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="footer">
+          <span data-i18n="tagline"><strong>چيد</strong> — building what matters, shipping what works.</span>
+          <span>© 2026 Jayed Studio</span>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var stored = '';
+        try {
+          stored = localStorage.getItem('lang') || '';
+        } catch (e) {}
+        var prefersAr =
+          stored === 'ar' ||
+          (navigator.languages && navigator.languages[0] && navigator.languages[0].toLowerCase().startsWith('ar')) ||
+          (navigator.language && navigator.language.toLowerCase().startsWith('ar'));
+
+        if (!prefersAr) return;
+
+        var html = document.documentElement;
+        html.setAttribute('dir', 'rtl');
+        html.setAttribute('lang', 'ar');
+        html.setAttribute('data-lang', 'ar');
+        document.title = '500 · خطأ في الخادم | جيد ستوديو';
+
+        var dict = {
+          title: 'حدث خطأ في الخادم.',
+          body:
+            'هذا ليس خطأك. جرّب مرة أخرى بعد قليل. إذا استمرت المشكلة فقد تكون إعدادات الخادم غير صحيحة (مثل قواعد إعادة التوجيه، مسار المجلد، أو نشر معطوب).',
+          home: 'العودة للرئيسية',
+          reload: 'إعادة تحميل',
+          contact: 'تواصل معنا',
+          hint: 'إذا كنت تنشر على Hostinger: تأكد أن `public_html` يحتوي ملفات `dist/client` وأن ملف `.htaccess` موجود.',
+          tagline: '<strong>چيد</strong> — نبني ما يهم، ونُسلّم ما يعمل.',
+        };
+
+        var nodes = document.querySelectorAll('[data-i18n]');
+        for (var i = 0; i < nodes.length; i++) {
+          var key = nodes[i].getAttribute('data-i18n');
+          if (!key || !dict[key]) continue;
+          nodes[i].innerHTML = dict[key];
+        }
+      })();
+    </script>
+  </body>
+</html>
+

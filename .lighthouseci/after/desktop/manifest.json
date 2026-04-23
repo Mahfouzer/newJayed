@@ -1,0 +1,74 @@
+[
+  {
+    "url": "http://localhost:3000/",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/mahfouzer/Desktop/new jayed/jayde-studio/.lighthouseci/after/desktop/localhost--2026_04_02_10_12_14.report.html",
+    "jsonPath": "/Users/mahfouzer/Desktop/new jayed/jayde-studio/.lighthouseci/after/desktop/localhost--2026_04_02_10_12_14.report.json",
+    "summary": {
+      "performance": 0.66,
+      "accessibility": 0.96,
+      "best-practices": 0.96,
+      "seo": 1
+    }
+  },
+  {
+    "url": "http://localhost:3000/projects",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/mahfouzer/Desktop/new jayed/jayde-studio/.lighthouseci/after/desktop/localhost-projects-2026_04_02_10_12_30.report.html",
+    "jsonPath": "/Users/mahfouzer/Desktop/new jayed/jayde-studio/.lighthouseci/after/desktop/localhost-projects-2026_04_02_10_12_30.report.json",
+    "summary": {
+      "performance": 0.75,
+      "accessibility": 0.96,
+      "best-practices": 0.96,
+      "seo": 1
+    }
+  },
+  {
+    "url": "http://localhost:3000/projects/quran-tutors",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/mahfouzer/Desktop/new jayed/jayde-studio/.lighthouseci/after/desktop/localhost-projects_quran_tutors-2026_04_02_10_12_43.report.html",
+    "jsonPath": "/Users/mahfouzer/Desktop/new jayed/jayde-studio/.lighthouseci/after/desktop/localhost-projects_quran_tutors-2026_04_02_10_12_43.report.json",
+    "summary": {
+      "performance": 0.81,
+      "accessibility": 0.96,
+      "best-practices": 0.96,
+      "seo": 1
+    }
+  },
+  {
+    "url": "http://localhost:3000/blogs",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/mahfouzer/Desktop/new jayed/jayde-studio/.lighthouseci/after/desktop/localhost-blogs-2026_04_02_10_12_56.report.html",
+    "jsonPath": "/Users/mahfouzer/Desktop/new jayed/jayde-studio/.lighthouseci/after/desktop/localhost-blogs-2026_04_02_10_12_56.report.json",
+    "summary": {
+      "performance": 0.71,
+      "accessibility": 0.96,
+      "best-practices": 0.96,
+      "seo": 1
+    }
+  },
+  {
+    "url": "http://localhost:3000/blogs/ai-model-avalanche-march-2026",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/mahfouzer/Desktop/new jayed/jayde-studio/.lighthouseci/after/desktop/localhost-blogs_ai_model_avalanche_march_2026-2026_04_02_10_13_09.report.html",
+    "jsonPath": "/Users/mahfouzer/Desktop/new jayed/jayde-studio/.lighthouseci/after/desktop/localhost-blogs_ai_model_avalanche_march_2026-2026_04_02_10_13_09.report.json",
+    "summary": {
+      "performance": 0.81,
+      "accessibility": 0.96,
+      "best-practices": 0.96,
+      "seo": 1
+    }
+  },
+  {
+    "url": "http://localhost:3000/quote",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/mahfouzer/Desktop/new jayed/jayde-studio/.lighthouseci/after/desktop/localhost-quote-2026_04_02_10_13_21.report.html",
+    "jsonPath": "/Users/mahfouzer/Desktop/new jayed/jayde-studio/.lighthouseci/after/desktop/localhost-quote-2026_04_02_10_13_21.report.json",
+    "summary": {
+      "performance": 0.9,
+      "accessibility": 0.96,
+      "best-practices": 0.96,
+      "seo": 1
+    }
+  }
+]

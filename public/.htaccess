@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Serve real files (assets, 404.html, 500.html, etc.)
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # SPA fallback (TanStack Router handles routes in-browser)
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Custom server error pages (for real server-level errors)
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+

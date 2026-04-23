@@ -1,0 +1,29 @@
+{
+  "ci": {
+    "collect": {
+      "numberOfRuns": 1,
+      "settings": {
+        "preset": "desktop",
+        "chromeFlags": [
+          "--headless=new",
+          "--no-sandbox",
+          "--disable-gpu",
+          "--disable-dev-shm-usage"
+        ]
+      },
+      "url": [
+        "http://localhost:3000/",
+        "http://localhost:3000/projects",
+        "http://localhost:3000/projects/quran-tutors",
+        "http://localhost:3000/blogs",
+        "http://localhost:3000/blogs/ai-model-avalanche-march-2026",
+        "http://localhost:3000/quote"
+      ]
+    },
+    "upload": {
+      "target": "filesystem",
+      "outputDir": ".lighthouseci/baseline/desktop"
+    }
+  }
+}
+
