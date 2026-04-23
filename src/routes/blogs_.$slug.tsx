@@ -34,7 +34,7 @@ export const Route = createFileRoute('/blogs_/$slug')({
 })
 
 function BlogPostDetail() {
-  const post = Route.useLoaderData()
+  const post = Route.useLoaderData() as Post
   return <BlogPostPage post={post} />
 }
 

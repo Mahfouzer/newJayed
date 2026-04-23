@@ -38,12 +38,21 @@ export const Route = createFileRoute('/')({
 
 function HomePage() {
   useEffect(() => {
+    const mq = window.matchMedia('(min-width: 1024px)')
     const html = document.documentElement
-    html.style.scrollSnapType = 'y mandatory'
-    html.style.scrollPaddingTop = '64px'
+
+    const apply = (matches: boolean) => {
+      html.style.scrollSnapType = matches ? 'y mandatory' : ''
+      html.style.scrollPaddingTop = matches ? '64px' : ''
+    }
+
+    apply(mq.matches)
+    mq.addEventListener('change', (e) => apply(e.matches))
+
     return () => {
       html.style.scrollSnapType = ''
       html.style.scrollPaddingTop = ''
+      mq.removeEventListener('change', (e) => apply(e.matches))
     }
   }, [])
 
@@ -53,7 +62,7 @@ function HomePage() {
       <div className="snap-start"><Manifesto /></div>
       <div className="snap-start"><Services /></div>
       <div className="snap-start"><Process /></div>
-      <div><Work /></div>
+      <div className="snap-start"><Work /></div>
       <div className="snap-start"><Testimonials /></div>
       <div className="snap-start"><FAQSection /></div>
       <div className="snap-start"><QuoteSection /></div>
