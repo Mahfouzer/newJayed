@@ -1,14 +1,47 @@
+# Dependencies
 node_modules
-.DS_Store
+.pnp
+.pnp.js
+
+# Build outputs
 dist
 dist-ssr
-*.local
-.env
-.nitro
-.tanstack
-.wrangler
 .output
+.nitro
 .vinxi
+.wrangler
+.tanstack
 __unconfig*
-todos.json
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Cache
 .cache
+*.local
+*.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Misc
+todos.json
